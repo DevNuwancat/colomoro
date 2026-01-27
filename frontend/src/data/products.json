@@ -8,8 +8,8 @@
     "brand": "Jaya Ceylon",
     "description": "Premium gaming controller with customizable buttons and RGB lighting",
     "images": [
-      "/src/assets/images/Products/header.png",
-      "/src/assets/images/Products/item_2.png"
+      "/images/Products/header.png",
+      "/images/Products/item_2.png"
     ],
     "badge": "New Arrival",
     "stock": 15,
@@ -23,8 +23,8 @@
     "brand": "Jaya Ceylon",
     "description": "Ultra-lightweight wireless gaming mouse with HERO 25K sensor for precision tracking",
     "images": [
-      "/src/assets/images/Products/header.png",
-      "/src/assets/images/Products/item_2.png"
+      "/images/Products/header.png",
+      "/images/Products/item_2.png"
     ],
     "badge": "Best Seller",
     "stock": 10,
