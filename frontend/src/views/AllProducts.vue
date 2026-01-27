@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {ref} from 'vue';
+import {computed, ref} from 'vue';
 import type { Ref } from 'vue';
 import { useRouter } from 'vue-router'; 
 import productData from '../data/products.json';
@@ -35,6 +35,20 @@ const goToProductPage = (productId: number): void => {
   router.push('/product/' + productId);
 }
 
+
+const selectedBrands: Ref<string[]> = ref([]);
+
+const filteredProducts = computed(() => {
+  if (selectedBrands.value.length === 0) {
+    return products.value;
+  }
+
+  return products.value.filter(product => 
+    selectedBrands.value.includes(product.brand.toLowerCase().replace(/\s+/g, '-'))
+  )
+}
+
+)
 
 
 </script>
@@ -93,12 +107,6 @@ const goToProductPage = (productId: number): void => {
 <!--? items and filter system-->
 <div class="flex justify-between items-center mt-6 mb-4">
 
-  <div class="flex gap-2 justify-center items-center">
-    <img src="/src/assets/images/icons/settings-sliders.png" alt="" 
-    class="h-5 w-5 object-cover"/>
-    <p class="text-[18px]">Filters</p>
-  </div>
-
   <div></div>
 
 </div>
@@ -108,16 +116,45 @@ const goToProductPage = (productId: number): void => {
 
   <div class="grid md:grid-cols-4 grid-cols-1 gap-2">
 
-    <aside class="md:md-span-1">
-      <div class="sticky top-4 bg-green-300">
-        <div>Filter</div>
+    <aside class="md:col-span-1 items-center p-4 h-max ">
+      <div class="sticky top-4">
+        <div class="mb-6">
+            <label class="block text-medium font-bold">Select Products ({{ products.length }})</label>
+            <div class="border-t my-6 border-gray-300 w-28"></div>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2 custom-checkbox" value="jaya-ceylon" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Jaya Ceylon</span>
+              </label>
+              <label class="flex items-center ">
+                <input type="checkbox" class="mr-2 custom-checkbox" value="sony" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Sony</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2 custom-checkbox" value="microsoft" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Microsoft</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2 custom-checkbox" value="nintendo" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Nintendo</span>
+              </label>
+            </div>
+
+            <button 
+                v-if="selectedBrands.length > 0"
+                @click="selectedBrands = []"
+                class="mt-4 w-full bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 rounded-lg transition-colors text-sm font-medium">
+                Clear Filters ({{ selectedBrands.length }})
+              </button>
+
+          </div>
       </div>
     </aside>
 
     <main class="md:col-span-3">
 
       <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mb-4">
-        <div v-for="product in products" :key="product.id" @click="goToProductPage(product.id)">
+        <div v-for="product in filteredProducts" :key="product.id" @click="goToProductPage(product.id)">
            <!-- IMAGE CARD (OVERLAY STYLE) -->
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
 
@@ -187,5 +224,48 @@ const goToProductPage = (productId: number): void => {
 </template>
 
 <style scoped>
+
+.custom-checkbox {
+  appearance: none;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #d1d5db;
+  background-color: #dadbdc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.custom-checkbox:hover {
+  border-color: #10b981;
+}
+
+.custom-checkbox:checked {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-color: #10b981;
+}
+
+.custom-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.checkbox-label:hover {
+  color: #10b981;
+}
 
 </style>
