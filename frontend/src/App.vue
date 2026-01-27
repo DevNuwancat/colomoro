@@ -3,15 +3,15 @@
 import {ref, onMounted, onUnmounted} from 'vue';
 import type { Ref } from 'vue';
 
+import slider1 from '/images/slider1.png';
+import slider2 from '/images/slider2.png';
 // ? Slider State
 const currentSlider: Ref<number> = ref(0)
 
 // ? Slider Images
 const sliders: Ref<string[]> = ref([
-  "/src/assets/images/slider1.png",
-  "/src/assets/images/slider2.png",
-  "/src/assets/images/slider1.png",
-  "/src/assets/images/slider2.png",
+  slider1,
+  slider2,
 ])
 
 // ? Function to go to the next slide
@@ -47,8 +47,6 @@ onUnmounted((): void => {
     clearInterval(autoplayInterval)
   }
 })
-
-
 
 
 </script>
