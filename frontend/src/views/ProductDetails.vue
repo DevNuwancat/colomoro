@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, computed, onMounted} from 'vue';
+import {ref, computed} from 'vue';
 import { useRoute } from 'vue-router';
 import productsData from '../data/products.json';
 
@@ -71,7 +71,7 @@ const goToSlide = (index: number) => {
         <!-- LEFT: Image Slideshow -->
         <div class="relative">
           <!-- Main Slideshow -->
-          <div class="relative h-96 sm:h-[500px] rounded-xl overflow-hidden bg-white">
+          <div class="relative h-96 sm:h-125 rounded-xl overflow-hidden bg-white">
             <img
               v-for="(image, index) in product.images"
               :key="index"
