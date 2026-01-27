@@ -128,7 +128,7 @@ onUnmounted((): void => {
        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4 z-20 bg-white/10 
                    px-4 py-2 rounded-full">
           <button 
-          v-for="(slide, index) in sliders"
+          v-for="(_, index) in sliders"
           :key="index"
           @click="currentSlider = index"
           class="shadow-2xl cursor-pointer"
