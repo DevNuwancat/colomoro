@@ -75,11 +75,11 @@ onUnmounted((): void => {
     <div class="flex items-center gap-8 text-sm font-base text-gray-900">
       <a href="#" class="hover:text-primary transition-colors sm:flex hidden">Home</a>
       
-      <a href="#" class="hover:bg-linear-to-r hover:from-red-600 hover:to-red-700
+      <router-link to="/all-products" class="hover:bg-linear-to-r hover:from-red-600 hover:to-red-700
       transition-colors rounded-full px-4 py-2 
       bg-linear-to-r from-red-500 to-red-500 text-white
       
-      ">All Products</a>
+      ">All Products</router-link>
 
       <a href="#" class="hover:text-primary transition-colors sm:flex hidden ">About Us</a>
       <a href="#" class="hover:text-primary transition-colors sm:flex hidden">Contact Us</a> 
