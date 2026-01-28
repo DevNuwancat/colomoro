@@ -70,12 +70,15 @@ const filteredProducts = computed(() => {
 
     <!-- * Logo -->
     <div class="flex items-center gap-4">
+      <router-link to="/">
       <img src="/src/assets/images/logo.png" class="h-8 w-auto object-cover" alt="Logo" />
+      </router-link>
+      
     </div>
 
     <!-- * Navigation Links -->
     <div class="flex items-center gap-8 text-sm font-base text-gray-900">
-      <a href="#" class="hover:text-primary transition-colors sm:flex hidden">Home</a>
+      <router-link to="/" class="hover:text-primary transition-colors sm:flex hidden">Home</router-link>
       
       <router-link to="/all-products" class="hover:bg-linear-to-r hover:from-red-600 hover:to-red-700
       transition-colors rounded-full px-4 py-2 
@@ -102,10 +105,10 @@ const filteredProducts = computed(() => {
 <div class="bg-background rounded-xl m-4 p-4">
 
 <!--? Product Name -->
-<h1 class="text-center text-7xl font-semibold">All Products</h1>
+<h1 class="text-center md:text-7xl text-4xl font-semibold mt-4">All Products</h1>
 
 <!--? items and filter system-->
-<div class="flex justify-between items-center mt-6 mb-4">
+<div class="flex justify-between items-center md:mt-10 md:mb-4 ">
 
   <div></div>
 
@@ -114,10 +117,10 @@ const filteredProducts = computed(() => {
 <!--? Items-->
 <section>
 
-  <div class="grid md:grid-cols-4 grid-cols-1 gap-2">
+  <div class="grid md:grid-cols-4 grid-cols-1 gap-2 ">
 
     <aside class="md:col-span-1 items-center p-4 h-max ">
-      <div class="sticky top-4">
+      <div class="sticky top-4 hidden md:block">
         <div class="mb-6">
             <label class="block text-medium font-bold">Select Products ({{ products.length }})</label>
             <div class="border-t my-6 border-gray-300 w-28"></div>

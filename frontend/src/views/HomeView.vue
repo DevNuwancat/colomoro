@@ -3,8 +3,9 @@
 import {ref, onMounted, onUnmounted} from 'vue';
 import type { Ref } from 'vue';
 
-import slider1 from '/images/slider1.png';
-import slider2 from '/images/slider2.png';
+import slider1 from '/images/02_slider.jpg';
+import slider2 from '/images/01_slider.jpg';
+
 // ? Slider State
 const currentSlider: Ref<number> = ref(0)
 
@@ -12,6 +13,7 @@ const currentSlider: Ref<number> = ref(0)
 const sliders: Ref<string[]> = ref([
   slider1,
   slider2,
+  
 ])
 
 // ? Function to go to the next slide
@@ -115,13 +117,15 @@ onUnmounted((): void => {
     </div>
 
     <!-- * Image -->
-    <div class="absolute right-0 top-0 h-full w-full overflow-hidden rounded-xl ">
+    <div class="absolute right-0 top-0 h-full w-full overflow-hidden rounded-xl flex items-center justify-center">
       <img
       v-for="(slide, index) in sliders"
       :key="index"
       v-show="currentSlider === index"
       :src="slide"
-      class="sm:h-92 h-72 w-full object-cover transition-opacity duration-500" alt="Header Images"
+      class="sm:h-92 h-72 w-full object-cover 
+           transition-opacity duration-700 ease-in-out" alt="Header Images"
+      :class="currentSlider === index ? 'opacity-100 ' : 'opacity-0 '"
       />      
     </div>
 
@@ -170,14 +174,14 @@ onUnmounted((): void => {
     <!-- IMAGE CARD (OVERLAY STYLE) -->
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
 
-      <img src="/src/assets/images/header.png"
+      <img src="/images/Products/new_arrival_01.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
 
       <!-- Overlay -->
-      <div class="absolute bottom-0 left-0 w-full sm:bg-green-800/70  text-white sm:p-3 p-2 text-shadow-lg">
-        <p class="text-xs text-green-300 sm:block hidden">Jaya Ceylon</p>
-        <h2 class="font-semibold sm:text-sm text-xs">GameSir G7 SE Xbox Wired Controller</h2>
-        <p class="text-sm">Rs 17,950.00</p>
+      <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
+        <p class="text-xs text-green-300 sm:block hidden text-shadow-2xs">Jaya Ceylon</p>
+        <h2 class="font-semibold sm:text-sm text-xs text-shadow-2xs">Handmade Coffee</h2>
+        <p class="text-sm text-shadow-2xs">Rs 600.00</p>
       </div>
 
       <!-- Badge -->
@@ -194,13 +198,30 @@ onUnmounted((): void => {
       </div>
     </div>
 
-    <!-- NORMAL PRODUCT CARD -->
-    <div class="sm:h-72 h-48 bg-background rounded-2xl shadow-lg overflow-hidden">
-      <img src="/src/assets/images/header.png" class="h-48 w-full object-cover" />
-      <div class="p-3">
-        <p class="text-sm text-gray-400">Jaya Ceylon</p>
-        <h2 class="font-semibold text-sm">GameSir G7 SE Xbox Wired Controller</h2>
-        <p class="text-sm">Rs 17,950.00</p>
+    <!-- IMAGE CARD (OVERLAY STYLE) -->
+    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+
+      <img src="/images/Products/new_arrival_02.jpg"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
+
+      <!-- Overlay -->
+      <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
+        <p class="text-xs text-green-300 sm:block hidden text-shadow-2xs">Sashrika</p>
+        <h2 class="font-semibold sm:text-sm text-xs text-shadow-2xs">Handmade Coconut Oil 1l</h2>
+        <p class="text-sm text-shadow-2xs">Rs 2000.00</p>
+      </div>
+
+      <!-- Badge -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        New Arrival
+      </span>
+
+      <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
       </div>
     </div>
 

@@ -42,7 +42,9 @@ const goToSlide = (index: number) => {
   <nav>
     <div class="flex justify-between items-center p-4 mx-4 my-4 border-t border-l border-r border-gray-200 rounded-xl bg-background border">
       <div class="flex items-center gap-4">
-        <img src="/src/assets/images/logo.png" class="h-8 w-auto object-cover" alt="Logo" />
+        <router-link to="/">
+      <img src="/src/assets/images/logo.png" class="h-8 w-auto object-cover" alt="Logo" />
+      </router-link>
       </div>
 
       <div class="flex items-center gap-8 text-sm font-base text-gray-900">
@@ -138,27 +140,22 @@ const goToSlide = (index: number) => {
             <span class="text-gray-600">({{ product.rating }})</span>
           </div>
 
-          <p class="text-5xl font-bold text-primary mb-6">
+          <p class="text-5xl font-bold text-green-700 mb-6">
             Rs {{ product.price.toLocaleString() }}
           </p>
 
           <p class="text-gray-700 mb-6">{{ product.description }}</p>
 
-          <div class="mb-6">
-            <span :class="product.stock > 10 ? 'text-green-600' : 'text-orange-600'" class="font-semibold">
-              {{ product.stock }} in stock
-            </span>
-          </div>
+          
 
           <div class="flex gap-4">
-            <button class="flex-1 bg-primary text-white py-3 rounded-full hover:bg-primary/80 transition-colors font-semibold">
-              Add to Cart
+            <button class="flex-1 bg-green-500 text-white py-3 rounded-full hover:bg-green-600/80 transition-colors font-semibold">
+              Shop with WhatsApp
             </button>
-            <button class="px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
-              ♡
-            </button>
+  
           </div>
 
+          <!--
           <div class="mt-8 space-y-4">
             <div class="flex items-start gap-3">
               <span class="text-2xl">🚚</span>
@@ -175,8 +172,10 @@ const goToSlide = (index: number) => {
               </div>
             </div>
           </div>
-        </div>
+          -->
 
+        </div>
+        
       </div>
     </div>
   </div>
