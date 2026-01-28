@@ -198,7 +198,7 @@ onUnmounted((): void => {
       </div>
     </div>
 
-    <!-- IMAGE CARD (OVERLAY STYLE) -->
+    <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
 
       <img src="/images/Products/new_arrival_02.jpg"
@@ -225,13 +225,30 @@ onUnmounted((): void => {
       </div>
     </div>
 
-    <!-- DUPLICATE CARD -->
-    <div class="sm:h-72 h-48 bg-background rounded-2xl shadow-lg overflow-hidden">
-      <img src="/src/assets/images/header.png" class="h-48 w-full object-cover" />
-      <div class="p-3">
-        <p class="text-sm text-gray-400">Jaya Ceylon</p>
-        <h2 class="font-semibold text-sm">GameSir G7 SE Xbox Wired Controller</h2>
-        <p class="text-sm">Rs 17,950.00</p>
+    <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
+    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+
+      <img src="/images/Products/new_arrival_03.jpg"
+        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
+
+      <!-- Overlay -->
+      <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
+        <p class="text-xs text-green-300 sm:block hidden text-shadow-2xs">Jaya Ceylon</p>
+        <h2 class="font-semibold sm:text-sm text-xs text-shadow-2xs">Handmade Cinnamon Tea Bags (20PCS)</h2>
+        <p class="text-sm text-shadow-2xs">Rs 500.00</p>
+      </div>
+
+      <!-- Badge -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        New Arrival
+      </span>
+
+      <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
       </div>
     </div>
 
@@ -244,16 +261,155 @@ onUnmounted((): void => {
   
   <div class=" grid grid-cols-1 sm:grid-cols-2 gap-4 ">
     <!--* 1 large slide-->
-    <div class="flex bg-background w-full h-96 items-center justify-center rounded-2xl">1</div>
+    <div class="relative flex bg-background w-full h-96 items-center justify-center rounded-2xl group overflow-hidden ">
+
+      <img src="/images/company/com_01.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
+
+        <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
+      </div>
+
+      <!--Badge-->
+      <span class="absolute top-0 left-0 bg-green-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        Trusted Partner
+      </span>
+
+      <!--absolute Texts -->
+      <div class="absolute sm:left-4 left-3 bottom-0 -translate-y-1/4 text-shadow-lg max-w-md">
+
+        <img src="/images/company/logo_01.png" alt="" class="h-16 bg-white/80 p-1 rounded-full drop-shadow-2xl">
+
+        <h2 class="text-white font-primary font-bold sm:text-4xl text-2xl 
+                   left-0 top-0">
+                   Jaya Ceylon
+        </h2>
+        <p class="text-green-300"></p>
+      </div>
+
+
+
+    </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4">
       <!--* 2 slides-->
-      <div class="flex bg-background w-full h-46 items-center justify-center rounded-2xl">2</div>
-      <div class="flex bg-background w-full h-46 items-center justify-center rounded-2xl">3</div>
+      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
+       group overflow-hidden ">
+
+        <img src="/images/company/com_02.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
+
+        <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
+      </div>
+
+       <!--Badge-->
+      <span class="absolute top-0 left-0 bg-green-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        Trusted Partner
+      </span>
+
+      <!--absolute Texts -->
+      <div class="absolute left-2 bottom-0 -translate-y-1/4 text-shadow-lg max-w-md">
+
+        <div class="flex gap-2 justify-center items-center">
+          <img src="/images/company/logo_02.png" alt="" class="h-6 bg-white/30 p-1 rounded-md drop-shadow-2xl">
+
+        <h2 class="text-white font-primary font-bold sm:text-xl text-l
+                   left-0 top-0">
+                   Shashrika
+        </h2>
+        </div>
+        
+        <p class="text-green-300 text-xs"></p>
+      </div>
+
+
+
+
+
+
+      </div>
+      <!--* 2 slides 3-->
+      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl group overflow-hidden">
+
+         <img src="/images/company/com_03.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
+
+        <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
+      </div>
+
+       <!--Badge-->
+      <span class="absolute top-0 left-0 bg-green-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        Trusted Partner
+      </span>
+
+      <!--absolute Texts -->
+      <div class="absolute left-2 bottom-0 -translate-y-1/4 text-shadow-lg max-w-md">
+
+        <div class="flex gap-2 items-center justify-center">
+          <img src="/images/company/logo_03.png" alt="" class="h-10 bg-white/80 p-0 rounded-xl drop-shadow-2xl">
+
+        <h2 class="text-white font-primary font-bold sm:text-xl text-l
+                   left-0 top- text-shadow-lg">
+                   Oshi 
+        </h2>
+        </div>
+        
+        <p class="text-green-300 text-xs"></p>
+      </div>
+
+
+
+
+
+      </div>
 
       <div class="grid grid-cols-1 col-span-2">
         <!--* 1 slide-->
-        <div class="flex bg-background w-full h-46 items-center justify-center rounded-2xl">4</div>
+        <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
+        group overflow-hidden">
+      
+      <img src="/images/company/com_04.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
+
+        <!-- Arrow -->
+      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
+        opacity-0 group-hover:opacity-100 transition-all duration-200
+        group-hover:translate-x-1">
+        →
+      </div>
+
+       <!--Badge-->
+      <span class="absolute top-0 left-0 bg-green-500 text-white text-xs px-2 py-1
+        rounded-br-lg rounded-tl-lg">
+        Trusted Partner
+      </span>
+
+      <!--absolute Texts -->
+      <div class="absolute left-2 bottom-0 -translate-y-1/4 text-shadow-lg max-w-md">
+
+        <div class="flex gap-2 items-center justify-center">
+          <img src="/images/company/logo_04.png" alt="" class="h-10 drop-shadow-2xl">
+
+        <h2 class="text-white font-primary font-bold sm:text-xl text-l
+                   left-0 top- text-shadow-lg">
+                   Teeny Treats
+        </h2>
+        </div>
+        
+        <p class="text-green-300 text-xs"></p>
+      </div>
+      
+      </div>
       </div>
 
     </div>
