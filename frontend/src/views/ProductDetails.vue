@@ -3,11 +3,13 @@
 import Footer from '../components/Footer.vue'
 import Nav from '../components/Nav.vue'
 
-import {ref, computed} from 'vue';
+import {ref, computed, onMounted} from 'vue';
 import { useRoute } from 'vue-router';
 import productsData from '../data/products.json';
 
-
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 
 const route = useRoute();
 const currentSlide = ref(0);
