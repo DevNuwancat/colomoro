@@ -2,14 +2,13 @@
 [
     {
     "id": 1,
-    "name": "GameSir G7 SE Xbox Wired Controller",
-    "price": 17950.00,
-    "category": "Gaming",
+    "name": "JAYA Ceylon Handmade Premium Green Tea (Loose Leaf)",
+    "price": 650.00,
+    "category": "Teas & Coffees",
     "brand": "Jaya Ceylon",
-    "description": "Premium gaming controller with customizable buttons and RGB lighting",
+    "description": "Pure Etoya Excellence. Experience the unique terroir of Etoya through our artisanal Green Tea. From the tenderest handpicked buds to your cup, enjoy a refreshing symphony of flavor and fine craftsmanship. Elevate your daily ritual with the handpicked purity.",
     "images": [
-      "/images/Products/header.png",
-      "/images/Products/item_1.png"
+      "/images/Products/all_products/item_1.jpg"
     ],
     "badge": "New Arrival",
     "stock": 15,
@@ -17,16 +16,29 @@
   },
   {
     "id": 2,
-    "name": "Logitech G Pro X Superlight Gaming Mouse",
-    "price": 24900.00,
-    "category": "Gaming",
-    "brand": "Sony",
-    "description": "Ultra-lightweight wireless gaming mouse with HERO 25K sensor for precision tracking",
+    "name": "JAYA Ceylon Handmade Black Tea Bags (20PCS)",
+    "price": 400.00,
+    "category": "Teas & Coffees",
+    "brand": "Jaya Ceylon",
+    "description": "Conveniently Brewed. Bring the luxury of the JAYA Ceylon to your cup. Our tea bags contain the same hand-plucked, master-crafted tea as our whole-leaf collection, offering a rich and robust infusion for the modern connoisseur. Enjoy the uncompromising quality of artisanal craftsmanship in every delicate, high-grade fragment.",
     "images": [
-      "/images/Products/header.png",
-      "/images/Products/item_1.png"
+      "/images/Products/all_products/item_2.jpeg"
     ],
     "badge": "Best Seller",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "JAYA Ceylon Handmade Premium Black Tea (Loose Leaf)",
+    "price": 525.00,
+    "category": "Teas & Coffees",
+    "brand": "Jaya Ceylon",
+    "description": "Experience the Art of Single-Origin Tea. Hand-crafted in the lush gardens of Etoya, Ratnapura, our tea is meticulously handpicked and artisanal-dried to preserve its unique terroir. Indulge in a symphony of flavor and time-honored craftsmanship in every sip.",
+    "images": [
+      "/images/Products/all_products/item_3.jpeg"
+    ],
+    "badge": "20% Off",
     "stock": 10,
     "rating": 4.8
   }
