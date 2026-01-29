@@ -45,7 +45,7 @@
   {
     "id": 4,
     "name": "JAYA Ceylon Handmade Black Tea (Fannings)",
-    "price": 335,
+    "price": 335.00,
     "category": "Teas & Coffees",
     "brand": "Jaya Ceylon",
     "description": "Small Leaf, Big Flavor. Our Handmade Fannings deliver the same pristine Etoya terroir as our whole-leaf tea, but with an intensified, faster-steeping finish. This bold blend offers a rich, malty awakening for those who appreciate a stronger, more traditional cup of tea.",
@@ -60,7 +60,7 @@
     {
     "id": 5,
     "name": "JAYA Ceylon Handmade Cinnamon Tea Bags (20PCS)",
-    "price": 500,
+    "price": 500.00,
     "category": "Teas & Coffees",
     "brand": "Jaya Ceylon",
     "description": "The Spirit of Ceylon in Every Sip. Ignite your senses with JAYA Ceylon’s signature blend: premium Etoya tea leaves infused with real authentic Ceylon cinnamon bark. No artificial flavors—just the bold, aromatic warmth of the \"Golden Spice.\" A sophisticated, all-natural ritual designed for those who value health, heritage, and flavor.",
@@ -75,7 +75,7 @@
   {
     "id": 6,
     "name": "JAYA Ceylon Handmade Ginger Tea Bags (20PCS",
-    "price": 500,
+    "price": 500.00,
     "category": "Teas & Coffees",
     "brand": "Jaya Ceylon",
     "description": "A Zesty Awakening. Experience the raw power of nature with JAYA Ceylon’s signature Ginger blend. We combine premium, handpicked Etoya tea with real, crushed Ceylon ginger —no additives, just pure vitality. This 100% natural brew offers a spirited, aromatic journey that honors your health and the rich traditions of Sri Lankan soil.",
