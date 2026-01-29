@@ -23,8 +23,8 @@
       
       ">All Products</router-link>
 
-      <a href="#" class="hover:text-primary transition-colors sm:flex hidden ">About Us</a>
-      <a href="#" class="hover:text-primary transition-colors sm:flex hidden">Contact Us</a> 
+      <router-link to="/aboutus" class="hover:text-primary transition-colors sm:flex hidden ">About Us</router-link>
+      <router-link to="/contactus" class="hover:text-primary transition-colors sm:flex hidden">Contact Us</router-link> 
     </div>
 
     <div class="relative flex items-center">
