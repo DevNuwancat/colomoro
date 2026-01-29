@@ -106,7 +106,7 @@ import Nav from '../components/Nav.vue'
                 type="text" 
                 id="name" 
                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                placeholder="John Doe"
+                placeholder="colomoro"
               />
             </div>
 
@@ -117,7 +117,7 @@ import Nav from '../components/Nav.vue'
                 type="email" 
                 id="email" 
                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                placeholder="john@example.com"
+                placeholder="colomoro@example.com"
               />
             </div>
 
