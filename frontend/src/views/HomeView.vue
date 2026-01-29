@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import Footer from '../components/Footer.vue'
+
 import {ref, onMounted, onUnmounted} from 'vue';
 import type { Ref } from 'vue';
 
@@ -74,7 +76,7 @@ onUnmounted((): void => {
     </div>
 
     <!-- * Navigation Links -->
-    <div class="flex items-center gap-8 text-sm font-base text-gray-900">
+    <div class="flex items-center gap-8 sm:text-base  text-gray-900">
       <a href="#" class="hover:text-primary transition-colors sm:flex hidden">Home</a>
       
       <router-link to="/all-products" class="hover:bg-linear-to-r hover:from-red-600 hover:to-red-700
@@ -418,25 +420,7 @@ onUnmounted((): void => {
 </section>
 
 
-<!--? Quick Section --> 
-<footer bg-background class="mt-6 p-4 bg-background rounded-xl">
-
-  <!---->
-  <div class="grid grid-cols-3 gap-5 p-4 font-primary">
-
-    <div class="text-3xl font-semibold ">
-      Sign up for new stories and personal offers
-    </div>
-
-    <div class="font-bold text-xl">Info</div>
-
-    <div class="font-bold text-xl">Contact Us</div>
-
-  </div>
-
-</footer>
-
-
+<Footer />
 
 </template>
 

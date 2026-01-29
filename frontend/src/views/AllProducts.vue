@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer from '../components/Footer.vue'
 
 import {computed, ref} from 'vue';
 import type { Ref } from 'vue';
@@ -130,16 +131,20 @@ const filteredProducts = computed(() => {
                 <span class="text-base text-gray-600">Jaya Ceylon</span>
               </label>
               <label class="flex items-center ">
-                <input type="checkbox" class="mr-2 custom-checkbox" value="sony" v-model="selectedBrands">
-                <span class="text-base text-gray-600">Sony</span>
+                <input type="checkbox" class="mr-2 custom-checkbox" value="sashrika" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Sashrika</span>
               </label>
               <label class="flex items-center">
-                <input type="checkbox" class="mr-2 custom-checkbox" value="microsoft" v-model="selectedBrands">
-                <span class="text-base text-gray-600">Microsoft</span>
+                <input type="checkbox" class="mr-2 custom-checkbox" value="oshi" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Oshi</span>
               </label>
               <label class="flex items-center">
-                <input type="checkbox" class="mr-2 custom-checkbox" value="nintendo" v-model="selectedBrands">
-                <span class="text-base text-gray-600">Nintendo</span>
+                <input type="checkbox" class="mr-2 custom-checkbox" value="teeny-treats" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Teeny Treats</span>
+              </label>
+               <label class="flex items-center">
+                <input type="checkbox" class="mr-2 custom-checkbox" value="hotzy-food" v-model="selectedBrands">
+                <span class="text-base text-gray-600">Hotzy-Food</span>
               </label>
             </div>
 
@@ -166,7 +171,7 @@ const filteredProducts = computed(() => {
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
 
       <!-- Overlay -->
-      <div class="absolute bottom-0 left-0 w-full sm:bg-green-800/70  text-white sm:p-3 p-2 text-shadow-lg">
+      <div class="absolute bottom-0 left-0 w-fullsm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
         <p class="text-xs text-green-300 sm:block hidden">{{ product.brand }}</p>
         <h2 class="font-semibold sm:text-sm text-xs">{{ product.name }}</h2>
         <p class="text-sm">Rs {{ product.price.toLocaleString() }}.00</p>
@@ -204,23 +209,7 @@ const filteredProducts = computed(() => {
 
 
 
-<!--? footer Section --> 
-<footer bg-background class="mt-6 p-4 bg-background rounded-xl">
-
-  <!---->
-  <div class="grid grid-cols-3 gap-5 p-4 font-primary">
-
-    <div class="text-3xl font-semibold ">
-      Sign up for new stories and personal offers
-    </div>
-
-    <div class="font-bold text-xl">Info</div>
-
-    <div class="font-bold text-xl">Contact Us</div>
-
-  </div>
-
-</footer>
+<Footer />
 
 
 

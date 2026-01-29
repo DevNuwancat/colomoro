@@ -1,4 +1,7 @@
 <script setup lang="ts">
+
+import Footer from '../components/Footer.vue'
+
 import {ref, computed} from 'vue';
 import { useRoute } from 'vue-router';
 import productsData from '../data/products.json';
@@ -187,4 +190,7 @@ const goToSlide = (index: number) => {
       Back to products
     </router-link>
   </div>
+
+  <Footer />
+
 </template>
