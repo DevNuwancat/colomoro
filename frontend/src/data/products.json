@@ -113,5 +113,20 @@
     "badge": "New Arrival",
     "stock": 10,
     "rating": 4.8
+  },
+  {
+    "id": 9,
+    "name": "Handmade Cocount Oil 1L",
+    "price": 2000.00,
+    "category": "Coconut Oil",
+    "brand": "Sashrika",
+    "description": "Traditionally crafted from carefully selected coconuts, this pure handmade coconut oil adds natural flavor and goodness to your cooking.",
+    "images": [
+      "/images/Products/all_products/item_9.jpg",
+      "/images/Products/all_products/item_9.1.jpg"
+    ],
+    "badge": "New Arrival",
+    "stock": 10,
+    "rating": 4.8
   }
 ]

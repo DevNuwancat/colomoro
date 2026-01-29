@@ -106,7 +106,7 @@ const filteredProducts = computed(() => {
 
   <div class="grid md:grid-cols-4 grid-cols-1 sm:gap-2 gap-1">
 
-    <aside class="md:col-span-1 items-center p-4 h-max ">
+    <aside class="md:col-span-1 items-center p-4 h-max sticky top-4 hidden md:block">
       <div class="sticky top-4 hidden md:block">
         <div class="mb-6">
             <label class="block text-medium font-bold">Select Products ({{ products.length }})</label>
@@ -145,7 +145,7 @@ const filteredProducts = computed(() => {
       </div>
     </aside>
 
-    <main class="md:col-span-3">
+    <main class="md:col-span-3 ">
   <div class="grid md:grid-cols-3 grid-cols-2 sm:gap-4 gap-2 sm:mb-4">
     <div v-for="product in filteredProducts" :key="product.id" @click="goToProductPage(product.id)">
       
