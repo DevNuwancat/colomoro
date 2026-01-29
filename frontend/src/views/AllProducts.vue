@@ -10,7 +10,7 @@ import productData from '../data/products.json';
 
 // SEO for this page
 useHead({
-  title: 'All Products - Handmade Sri Lankan Products | Colo Moro',
+  title: 'Colo Moro - Handmade Sri Lankan Products Marketplace',
   meta: [
     {
       name: 'description',
