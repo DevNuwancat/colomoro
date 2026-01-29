@@ -61,8 +61,8 @@ const toggleMenu = (): void => {
       <router-link to="/" class="hover:text-primary transition-colors sm:flex hidden">Home</router-link>
       
       <router-link to="/all-products" class="hover:bg-linear-to-r hover:from-red-600 hover:to-red-700
-      transition-colors rounded-full px-4 py-2 
-      bg-linear-to-r from-red-500 to-red-500 text-white
+      rounded-full px-4 py-2 
+      bg-linear-to-r from-red-500 to-red-500 text-white hover:scale-110 duration-300 transition-all ease-in-out
       
       ">All Products</router-link>
 
@@ -73,7 +73,7 @@ const toggleMenu = (): void => {
     <div class="relative items-center hidden sm:flex">
         <a href="https://wa.me/">
           <button class=" bg-linear-to-r from-green-500 to-green-600 text-sm p-2 rounded-md text-white border 
-                         hover:bg-green-300 transition-colors">
+                         hover:scale-110 duration-300 transition-all ease-in-out">
                          WhatsApp
           </button>
         </a>

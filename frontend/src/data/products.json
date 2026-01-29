@@ -128,5 +128,91 @@
     "badge": "New Arrival",
     "stock": 10,
     "rating": 4.8
+  },
+
+    {
+    "id": 10,
+    "name": "Handmade Cocount Oil 675L",
+    "price": 1350.00,
+    "category": "Coconut Oil",
+    "brand": "Sashrika",
+    "description": "Traditionally crafted from carefully selected coconuts, this pure handmade coconut oil adds natural flavor and goodness to your cooking.",
+    "images": [
+      "/images/Products/all_products/item_14.jpg",
+      "/images/Products/all_products/item_9.1.jpg"
+    ],
+    "badge": "New Arrival",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "name": "Handmade Cocount Oil 375g",
+    "price": 650.00,
+    "category": "Pickle",
+    "brand": "Oshi",
+    "description": "Achcharu(Pickle) is a handmade food brand bringing you the true taste of traditional achcharu. Prepared using fresh ingredients, authentic spices, and time-tested recipes, our achcharu is made with care to deliver bold flavor and real quality..",
+    "images": [
+      "/images/Products/all_products/item_13.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "name": "Butter Cake 1kg",
+    "price": 1400.00,
+    "category": "Cakes",
+    "brand": "Teeny Treats",
+    "description": "At Teeny Treats, we bake soft, rich, and buttery cakes made with love and the finest ingredients. Our butter cakes are freshly baked to give you a home-style taste, perfect texture, and comforting aroma in every slice.",
+    "images": [
+      "/images/Products/all_products/item_11.1.jpg"
+    ],
+    "badge": "Best Seller",
+    "stock": 10,
+    "rating": 4.8
+  },
+   {
+    "id": 12,
+    "name": "Chocolate Cake 1kg",
+    "price": 1700.00,
+    "category": "Cakes",
+    "brand": "Teeny Treats",
+    "description": "At Teeny Treats, our chocolate cakes are baked to satisfy true chocolate lovers. Made with quality cocoa, fresh ingredients, and lots of care, each cake is soft, moist, and deeply chocolatey..",
+    "images": [
+      "/images/Products/all_products/item_15.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+   {
+    "id": 13,
+    "name": "Date Cake 1kg",
+    "price": 3000.00,
+    "category": "Cakes",
+    "brand": "Teeny Treats",
+    "description": "Teeny Treats Date Cake is a rich, moist cake made with natural dates and carefully selected ingredients. Slow-baked to bring out deep flavor and softness, this cake offers a perfect balance of sweetness and warmth in every bite.",
+    "images": [
+      "/images/Products/all_products/item_16.jpg"
+    ],
+    "badge": "New Arrival",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "name": "Chocolate Muffin",
+    "price": 120.00,
+    "category": "Cakes",
+    "brand": "Teeny Treats",
+    "description": "Our Chocolate Muffins are soft, fluffy, and packed with rich chocolate flavor. Baked fresh using quality ingredients, each muffin is perfectly moist and delicious — just right for a quick snack or sweet treat.",
+    "images": [
+      "/images/Products/all_products/item_17.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
   }
 ]
