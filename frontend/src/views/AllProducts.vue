@@ -2,11 +2,14 @@
 import Footer from '../components/Footer.vue'
 import Nav from '../components/Nav.vue'
 
-import {computed, ref} from 'vue';
+import {computed, ref, onMounted} from 'vue'; // ← ADD onMounted
 import type { Ref } from 'vue';
-import { useRouter } from 'vue-router'; 
+import { useRouter, useRoute } from 'vue-router'; // ← ADD useRoute
 import { useHead } from '@vueuse/head';
 import productData from '../data/products.json';
+
+
+
 
 // SEO for this page
 useHead({
@@ -27,8 +30,16 @@ useHead({
   ]
 })
 
-// ? Router instance
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
+
+// ============================================
+// 🎯 ROUTER & ROUTE INSTANCES
+// ============================================
 const router = useRouter();
+const route = useRoute(); // ← ADD THIS - to read URL parameters
 
 // ? Products State
 const products: Ref<Product[]> = ref(
@@ -77,6 +88,27 @@ const filteredProducts = computed(() => {
 })
 
 // ============================================
+// 🎯 READ URL PARAMETERS ON PAGE LOAD
+// ============================================
+onMounted((): void => {
+  // Check if there's a 'brand' query parameter in the URL
+  const brandFromUrl = route.query.brand as string | undefined;
+  
+  if (brandFromUrl) {
+    // If brand exists in URL, add it to selected brands
+    selectedBrands.value = [brandFromUrl];
+    
+    console.log('🎯 Brand filter applied from URL:', brandFromUrl);
+  }
+  
+  // 🎯 EXPLANATION:
+  // 1. route.query contains all URL parameters
+  // 2. route.query.brand gets the 'brand' parameter
+  // 3. We set selectedBrands to apply the filter
+  // 4. filteredProducts computed property automatically updates!
+})
+
+// ============================================
 // 🎯 MOBILE FILTER SIDEBAR LOGIC
 // ============================================
 const isFilterSidebarOpen: Ref<boolean> = ref(false);
@@ -117,16 +149,15 @@ const clearMobileFilters = (): void => {
 // ============================================
 // 💡 KEY LEARNING POINTS:
 // ============================================
-// 1. We use TWO separate arrays:
-//    - selectedBrands: The actual applied filters
-//    - tempSelectedBrands: Temporary filters (mobile only)
+// 1. route.query: Reads URL parameters (everything after '?')
+//    Example: /products?brand=jaya-ceylon&category=tea
+//    route.query = { brand: 'jaya-ceylon', category: 'tea' }
 //
-// 2. Why? Because on mobile, user might:
-//    - Select filters
-//    - Click "Close" (cancel changes)
-//    - Click "Apply" (save changes)
+// 2. onMounted: Runs when component loads
+//    Perfect for reading URL parameters!
 //
-// 3. On desktop, changes apply immediately (no temp array needed)
+// 3. Type assertion: 'as string | undefined'
+//    Tells TypeScript what type to expect
 // ============================================
 
 </script>

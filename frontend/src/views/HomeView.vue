@@ -5,9 +5,15 @@ import Nav from '../components/Nav.vue'
 
 import {ref, onMounted, onUnmounted} from 'vue';
 import type { Ref } from 'vue';
+import { useRouter } from 'vue-router'; // ← ADD THIS
 
 import slider1 from '/images/02_slider.jpg';
 import slider2 from '/images/01_slider.jpg';
+
+// ============================================
+// 🎯 ROUTER INSTANCE
+// ============================================
+const router = useRouter(); // ← ADD THIS
 
 // ? Slider State
 const currentSlider: Ref<number> = ref(0)
@@ -16,7 +22,6 @@ const currentSlider: Ref<number> = ref(0)
 const sliders: Ref<string[]> = ref([
   slider1,
   slider2,
-  
 ])
 
 // ? Function to go to the next slide
@@ -53,6 +58,37 @@ onUnmounted((): void => {
   }
 })
 
+// ============================================
+// 🎯 BRAND FILTER NAVIGATION
+// ============================================
+/**
+ * Navigate to All Products page with brand filter
+ * @param brandSlug - The brand identifier (e.g., 'jaya-ceylon')
+ */
+const goToBrandProducts = (brandSlug: string): void => {
+  router.push({
+    path: '/all-products',
+    query: { brand: brandSlug }
+  })
+  
+  // 🎯 EXPLANATION:
+  // This creates a URL like: /all-products?brand=jaya-ceylon
+  // The query parameter will be read by AllProducts.vue
+}
+
+// ============================================
+// 💡 KEY CONCEPTS:
+// ============================================
+// 1. Query Parameters: Data passed in URL after '?'
+//    Example: /products?brand=jaya-ceylon&category=tea
+//
+// 2. router.push() with object:
+//    - path: Where to navigate
+//    - query: Object becomes URL parameters
+//
+// 3. Why not just navigate directly?
+//    Because we want to pass DATA (the brand to filter)
+// ============================================
 
 </script>
 
@@ -82,10 +118,13 @@ onUnmounted((): void => {
     <div class="absolute flex flex-col inset-0 z-10  items-center justify-end 
                 p-8 max-w-lg mx-auto">
       <!-- * Button -->
-      <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary/80
-                     transition-colors w-32 font-semibold text-sm cursor-pointer -translate-y-4">
-                     Shop Now
-                     </button>
+      <router-link to="/all-products">
+        <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary/80
+                   transition-colors w-32 font-semibold text-sm cursor-pointer -translate-y-4">
+                   Shop Now
+        </button>
+      </router-link>
+
     </div>
 
     <!-- * Image -->
@@ -154,7 +193,8 @@ onUnmounted((): void => {
 
   
 
-    <!-- IMAGE CARD (OVERLAY STYLE) -->
+  <!-- IMAGE CARD (OVERLAY STYLE) -->
+  <router-link to="/product/8">
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-2xl group cursor-pointer border border-white/50
     drop-shadow-2xl">
 
@@ -181,8 +221,10 @@ onUnmounted((): void => {
         →
       </div>
     </div>
+  </router-link>
 
     <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
+     <router-link to="/product/9">
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
 
@@ -209,8 +251,10 @@ onUnmounted((): void => {
         →
       </div>
     </div>
+    </router-link>
 
     <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
+      <router-link to="/product/5">
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
 
@@ -237,8 +281,10 @@ onUnmounted((): void => {
         →
       </div>
     </div>
+    </router-link>
 
   </div>
+  
 </section>
 
 <!--? Trust Us -->
@@ -247,7 +293,9 @@ onUnmounted((): void => {
   
   <div class=" grid grid-cols-1 sm:grid-cols-2 gap-4 ">
     <!--* 1 large slide-->
-    <div class="relative flex bg-background w-full h-96 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
+    <div 
+    @click="goToBrandProducts('jaya-ceylon')"
+    class="relative flex bg-background w-full h-96 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
     drop-shadow-2xl">
 
       <img src="/images/company/com_01.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
@@ -283,7 +331,9 @@ onUnmounted((): void => {
 
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4">
       <!--* 2 slides-->
-      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
+      <div 
+      @click="goToBrandProducts('sashrika')"
+      class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
        group overflow-hidden border border-white/50
     drop-shadow-2xl">
 
@@ -324,7 +374,9 @@ onUnmounted((): void => {
 
       </div>
       <!--* 2 slides 3-->
-      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
+      <div 
+      @click="goToBrandProducts('oshi')"
+      class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
     drop-shadow-2xl">
 
          <img src="/images/company/com_03.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
@@ -361,7 +413,9 @@ onUnmounted((): void => {
 
       <div class="grid grid-cols-1 col-span-2">
         <!--* 1 slide-->
-        <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
+        <div 
+         @click="goToBrandProducts('teeny-treats')"
+        class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
         group overflow-hidden border border-white/50
     drop-shadow-2xl">
       
