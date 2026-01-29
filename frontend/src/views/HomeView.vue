@@ -74,9 +74,10 @@ onUnmounted((): void => {
 <section class="">
 
   <!-- * Header -->
-  <header class="relative bg-background border border-gray-200 
+  <header class="relative bg-background 
                  rounded-xl mx-4 my-2 
-                 sm:h-92 h-72 overflow-hidden">
+                 sm:h-92 h-72 overflow-hidden border border-white/50
+    drop-shadow-2xl">
 
     <div class="absolute flex flex-col inset-0 z-10  items-center justify-end 
                 p-8 max-w-lg mx-auto">
@@ -154,7 +155,8 @@ onUnmounted((): void => {
   
 
     <!-- IMAGE CARD (OVERLAY STYLE) -->
-    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-2xl group cursor-pointer border border-white/50
+    drop-shadow-2xl">
 
       <img src="/images/Products/new_arrival_01.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -181,7 +183,8 @@ onUnmounted((): void => {
     </div>
 
     <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
-    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
 
       <img src="/images/Products/new_arrival_02.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -208,7 +211,8 @@ onUnmounted((): void => {
     </div>
 
     <!-- IMAGE CARD (OVERLAY STYLE) 2 -->
-    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
 
       <img src="/images/Products/new_arrival_03.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -243,7 +247,8 @@ onUnmounted((): void => {
   
   <div class=" grid grid-cols-1 sm:grid-cols-2 gap-4 ">
     <!--* 1 large slide-->
-    <div class="relative flex bg-background w-full h-96 items-center justify-center rounded-2xl group overflow-hidden ">
+    <div class="relative flex bg-background w-full h-96 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
+    drop-shadow-2xl">
 
       <img src="/images/company/com_01.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
 
@@ -279,7 +284,8 @@ onUnmounted((): void => {
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4">
       <!--* 2 slides-->
       <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
-       group overflow-hidden ">
+       group overflow-hidden border border-white/50
+    drop-shadow-2xl">
 
         <img src="/images/company/com_02.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
 
@@ -318,7 +324,8 @@ onUnmounted((): void => {
 
       </div>
       <!--* 2 slides 3-->
-      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl group overflow-hidden">
+      <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl group overflow-hidden border border-white/50
+    drop-shadow-2xl">
 
          <img src="/images/company/com_03.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
 
@@ -355,7 +362,8 @@ onUnmounted((): void => {
       <div class="grid grid-cols-1 col-span-2">
         <!--* 1 slide-->
         <div class="relative flex bg-background w-full h-46 items-center justify-center rounded-2xl
-        group overflow-hidden">
+        group overflow-hidden border border-white/50
+    drop-shadow-2xl">
       
       <img src="/images/company/com_04.jpg" alt="" class="w-full h-full object-cover rounded-2xl transition-transform duration-300  ease-in group-hover:scale-105">
 
@@ -402,7 +410,8 @@ onUnmounted((): void => {
   <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
 
     <!--* Heading -->
-    <div class="md:col-span-1 col-span-2 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="md:col-span-1 col-span-2 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
      
       <!--*-->
       <img src="/images/Products/all_products/item_11.jpg"
@@ -431,7 +440,8 @@ onUnmounted((): void => {
   </div>
 
 
-    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
       <!--*-->
       <img src="/images/Products/all_products/item_10.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -460,7 +470,8 @@ onUnmounted((): void => {
 
     
     </div>
-    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
       <!--*-->
       <img src="/images/Products/all_products/item_12.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -491,7 +502,8 @@ onUnmounted((): void => {
 
     
     
-    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
       <!--*-->
       <img src="/images/Products/all_products/item_2.jpeg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -522,7 +534,8 @@ onUnmounted((): void => {
 
     
     
-    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+    <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
+    drop-shadow-2xl">
       <!--*-->
       <img src="/images/Products/all_products/item_13.jpg"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />

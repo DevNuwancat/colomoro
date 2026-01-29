@@ -34,7 +34,8 @@ const toggleMenu = (): void => {
 
 <template>
     <nav>
-  <div class="flex justify-between items-center p-4 mx-4 my-4 border-t border-l border-r border-gray-200 rounded-xl bg-background border">
+  <div class="flex justify-between items-center p-4 mx-4 my-4 border-t border-l border-r rounded-xl bg-background border border-white/50
+    drop-shadow-2xl">
 
 
     <div class="flex items-center sm:hidden">
@@ -72,7 +73,7 @@ const toggleMenu = (): void => {
     <div class="relative items-center hidden sm:flex">
         <a href="https://wa.me/">
           <button class=" bg-linear-to-r from-green-500 to-green-600 text-sm p-2 rounded-md text-white border 
-                         hover:bg-green-800 transition-colors">
+                         hover:bg-green-300 transition-colors">
                          WhatsApp
           </button>
         </a>
