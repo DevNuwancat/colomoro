@@ -92,7 +92,7 @@ const filteredProducts = computed(() => {
 <div class="bg-background rounded-xl sm:m-4 sm:p-4 m-2 p-2">
 
 <!--? Product Name -->
-<h1 class="text-center md:text-7xl text-4xl font-semibold mt-4">All Products</h1>
+<h1 class="text-center md:text-7xl text-4xl font-semibold mt-4 mb-6">All Products</h1>
 
 <!--? items and filter system-->
 <div class="flex justify-between items-center md:mt-10 md:mb-4 ">
