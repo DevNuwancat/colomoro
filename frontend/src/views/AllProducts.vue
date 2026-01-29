@@ -5,7 +5,27 @@ import Nav from '../components/Nav.vue'
 import {computed, ref} from 'vue';
 import type { Ref } from 'vue';
 import { useRouter } from 'vue-router'; 
+import { useHead } from '@vueuse/head';
 import productData from '../data/products.json';
+
+// SEO for this page
+useHead({
+  title: 'All Products - Handmade Sri Lankan Products | Colo Moro',
+  meta: [
+    {
+      name: 'description',
+      content: 'Browse our collection of handmade Sri Lankan products including Ceylon tea, coffee, coconut oil, and more from trusted local artisans.'
+    },
+    {
+      property: 'og:title',
+      content: 'All Products - Colo Moro'
+    },
+    {
+      property: 'og:description',
+      content: 'Browse our collection of handmade Sri Lankan products.'
+    }
+  ]
+})
 
 // ? Router instance
 const router = useRouter();
