@@ -160,42 +160,48 @@ const filteredProducts = computed(() => {
     </aside>
 
     <main class="md:col-span-3">
+  <div class="grid md:grid-cols-3 grid-cols-2 sm:gap-4 gap-2 sm:mb-4">
+    <div v-for="product in filteredProducts" :key="product.id" @click="goToProductPage(product.id)">
+      
+      <!-- IMAGE CARD WITH SEPARATE DETAILS -->
+      <div class="rounded-2xl overflow-hidden shadow-lg group cursor-pointer bg-white flex flex-col">
+        
+        <!-- Image Section -->
+        <div class="relative sm:h-72 h-48 w-full overflow-hidden">
+          <img
+            :src="product.image"
+            :alt="product.name"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
 
-      <div class="grid md:grid-cols-3 grid-cols-2 sm:gap-4 gap-2 sm:mb-4 ">
-        <div v-for="product in filteredProducts" :key="product.id" @click="goToProductPage(product.id)">
-           <!-- IMAGE CARD (OVERLAY STYLE) -->
-    <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+          <!-- Badge -->
+          <span
+            v-if="product.badge"
+            class="absolute top-0 left-0 bg-red-500 text-white text-xs px-2 py-1 rounded-br-lg rounded-tl-lg"
+          >
+            {{ product.badge }}
+          </span>
 
-      <img :src="product.image"
-        :alt="product.name"
-        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
-
-      <!-- Overlay -->
-      <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
-        <p class="text-xs text-green-300 sm:block hidden">{{ product.brand }}</p>
-        <h2 class="font-semibold sm:text-sm text-xs">{{ product.name }}</h2>
-        <p class="text-sm">Rs {{ product.price.toLocaleString() }}.00</p>
+          <div class="absolute bottom-0 left-0 text-white px-2 py-1 rounded-tr-lg bg-green-500">
+        <p class="text-xs text-white ">{{ product.brand }}</p>
       </div>
 
-      <!-- Badge -->
-      <span 
-      v-if="product.badge"
-      class="absolute top-0 left-0 bg-red-500 text-white text-xs px-2 py-1
-        rounded-br-lg rounded-tl-lg">
-        {{ product.badge }}
-      </span>
+          <!-- Arrow -->
+          <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-all duration-200 group-hover:translate-x-1">
+            →
+          </div>
+        </div>
 
-      <!-- Arrow -->
-      <div class="absolute right-3 top-3 bg-white/80 rounded-full px-2 py-1
-        opacity-0 group-hover:opacity-100 transition-all duration-200
-        group-hover:translate-x-1">
-        →
+        <!-- Details Section (White Background) -->
+        <div class="bg-white p-3">
+          <h2 class="font-semibold sm:text-sm text-xs text-gray-900 mt-1">{{ product.name }}</h2>
+          <p class="text-base text-red-500 font-medium mt-2">Rs {{ product.price.toLocaleString() }}.00</p>
+        </div>
+
       </div>
     </div>
-        </div>
-      </div>
-      
-    </main>
+  </div>
+</main>
 
   </div>
 
