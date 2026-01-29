@@ -103,7 +103,7 @@ const filteredProducts = computed(() => {
   </div>
 </nav>
 
-<div class="bg-background rounded-xl m-4 p-4">
+<div class="bg-background rounded-xl sm:m-4 sm:p-4 m-2 p-2">
 
 <!--? Product Name -->
 <h1 class="text-center md:text-7xl text-4xl font-semibold mt-4">All Products</h1>
@@ -118,7 +118,7 @@ const filteredProducts = computed(() => {
 <!--? Items-->
 <section>
 
-  <div class="grid md:grid-cols-4 grid-cols-1 gap-2 ">
+  <div class="grid md:grid-cols-4 grid-cols-1 sm:gap-2 gap-1">
 
     <aside class="md:col-span-1 items-center p-4 h-max ">
       <div class="sticky top-4 hidden md:block">
@@ -161,7 +161,7 @@ const filteredProducts = computed(() => {
 
     <main class="md:col-span-3">
 
-      <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mb-4">
+      <div class="grid md:grid-cols-3 grid-cols-2 sm:gap-4 gap-2 sm:mb-4 ">
         <div v-for="product in filteredProducts" :key="product.id" @click="goToProductPage(product.id)">
            <!-- IMAGE CARD (OVERLAY STYLE) -->
     <div class="relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
@@ -171,7 +171,7 @@ const filteredProducts = computed(() => {
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
 
       <!-- Overlay -->
-      <div class="absolute bottom-0 left-0 w-fullsm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
+      <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
         <p class="text-xs text-green-300 sm:block hidden">{{ product.brand }}</p>
         <h2 class="font-semibold sm:text-sm text-xs">{{ product.name }}</h2>
         <p class="text-sm">Rs {{ product.price.toLocaleString() }}.00</p>
