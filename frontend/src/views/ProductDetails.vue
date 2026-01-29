@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import Footer from '../components/Footer.vue'
+import Nav from '../components/Nav.vue'
 
 import {ref, computed} from 'vue';
 import { useRoute } from 'vue-router';
@@ -41,31 +42,7 @@ const goToSlide = (index: number) => {
     <img src="/src/assets/images/textures/test_gpt.png" alt="Background Textures" class="object-cover h-full w-full"/>
   </backgroundImage>
 
-  <!-- Nav Bar -->
-  <nav>
-    <div class="flex justify-between items-center p-4 mx-4 my-4 border-t border-l border-r border-gray-200 rounded-xl bg-background border">
-      <div class="flex items-center gap-4">
-        <router-link to="/">
-      <img src="/src/assets/images/logo.png" class="h-8 w-auto object-cover" alt="Logo" />
-      </router-link>
-      </div>
-
-      <div class="flex items-center gap-8 text-sm font-base text-gray-900">
-        <router-link to="/" class="hover:text-primary transition-colors sm:flex hidden">Home</router-link>
-        <router-link to="/all-products" class="hover:text-primary transition-colors">All Products</router-link>
-        <router-link to="/about" class="hover:text-primary transition-colors sm:flex hidden">About Us</router-link>
-        <router-link to="/contact" class="hover:text-primary transition-colors sm:flex hidden">Contact Us</router-link>
-      </div>
-
-      <div class="relative flex items-center">
-        <a href="#">
-          <button class="bg-linear-to-r from-green-500 to-green-600 text-sm p-2 rounded-md text-white border hover:bg-green-800">
-            WhatsApp
-          </button>
-        </a>
-      </div>
-    </div>
-  </nav>
+  <Nav />
 
   <!-- Product Detail -->
   <div v-if="product" class="mx-4 my-6">
