@@ -160,7 +160,7 @@ const filteredProducts = computed(() => {
 
         <!-- Details Section (White Background) -->
         <div class="bg-white p-3">
-          <h2 class="font-semibold sm:text-sm text-xs text-gray-900 mt-1">{{ product.name }}</h2>
+          <h2 class="font-semibold sm:text-sm text-xs text-gray-900 mt-1 h-10 line-clamp-2">{{ product.name }}</h2>
           <p class="text-base text-red-500 font-medium mt-2">Rs {{ product.price.toLocaleString() }}.00</p>
         </div>
 

@@ -74,7 +74,7 @@
   },
   {
     "id": 6,
-    "name": "JAYA Ceylon Handmade Ginger Tea Bags (20PCS",
+    "name": "JAYA Ceylon Handmade Ginger Tea Bags (20PCS)",
     "price": 500.00,
     "category": "Teas & Coffees",
     "brand": "Jaya Ceylon",
@@ -83,6 +83,34 @@
       "/images/Products/all_products/item_6.jpeg"
     ],
     "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "JAYA Ceylon Handmade Green Tea Bags (20PCS)",
+    "price": 380.00,
+    "category": "Teas & Coffees",
+    "brand": "Jaya Ceylon",
+    "description": "Vibrant Flavor. Modern Convenience. Bring the purity of the Etoya gardens to your cup with JAYA Ceylon’s Handmade Green Tea Bags. Meticulously hand-crafted from the supple buds of sun-drenched Ratnapura, this antioxidant-rich blend offers a life-affirming flavor profile and a crisp, clean finish for your daily wellness journey.",
+    "images": [
+      "/images/Products/all_products/item_7.jpeg"
+    ],
+    "badge": "5% Off",
+    "stock": 10,
+    "rating": 4.8
+  },
+    {
+    "id": 8,
+    "name": "JAYA Ceylon Handmade Coffee 500g",
+    "price": 550.00,
+    "category": "Teas & Coffees",
+    "brand": "Jaya Ceylon",
+    "description": "Pure Ceylon Coffee. Single-Origin Excellence. A rich, soulful blend crafted from premium beans hand-harvested in Ratnapura. Meticulously processed and small-batch roasted to ensure a sophisticated depth of flavor, our coffee is 100% natural and free from enhancers. Discover the essence of the purity in every aromatic sip.",
+    "images": [
+      "/images/Products/all_products/item_8.jpeg"
+    ],
+    "badge": "New Arrival",
     "stock": 10,
     "rating": 4.8
   }
