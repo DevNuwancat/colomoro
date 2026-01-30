@@ -465,10 +465,10 @@ const goToBrandProducts = (brandSlug: string): void => {
   <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
 
     <!--* Heading -->
-    <router-link to="/product/12">
+    
     <div class="md:col-span-1 col-span-2 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
-     
+     <router-link to="/product/12">
       <!--*-->
       <img src="/images/Products/all_products/item_11.jpg"
         class="h-full w-full object-cover  transition-transform duration-300 group-hover:scale-110" />
@@ -492,9 +492,9 @@ const goToBrandProducts = (brandSlug: string): void => {
         group-hover:translate-x-1">
         →
       </div>
-
+      </router-link>
   </div>
-  </router-link>
+  
 
     <router-link to="/product/16">
     <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
