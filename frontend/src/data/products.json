@@ -242,6 +242,51 @@
     "badge": "",
     "stock": 10,
     "rating": 4.8
+  },
+  {
+    "id": 18,
+    "name": "Papaya Twist Jam",
+    "price": 740.00,
+    "category": "Jam",
+    "brand": "Hotzy-Food",
+    "description": "Made with fresh papaya and a touch of zesty lime, Papaya Twist Jam delivers a naturally sweet and refreshing flavor in every spoonful. Crafted with real ingredients and no artificial colors or flavors, it’s a wholesome choice for everyday enjoyment. Perfect on toast, in desserts, or straight from the jar—pure, natural goodness you can taste.",
+    "images": [
+      "/images/Products/all_products/item_19.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "name": "Pineapple Bliss Jam",
+    "price": 740.00,
+    "category": "Jam",
+    "brand": "Hotzy-Food",
+    "description": "A tropical delight made with fresh pineapple and aromatic Ceylon cinnamon, delivering a perfectly balanced sweet and warm flavor. Crafted with real ingredients and no artificial colors or flavors, this jam offers pure, natural goodness in every spoonful. Perfect for toast, desserts, or as a simple treat—Pineapple Bliss brings a taste of paradise to your day.",
+    "images": [
+      "/images/Products/all_products/item_20.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 20,
+    "name": "Passion Fashion Jam",
+    "price": 740.00,
+    "category": "Jam",
+    "brand": "Hotzy-Food",
+    "description": "A bold fusion of tangy passion fruit and fiery Scotch Bonnet peppers, bringing a perfect balance of sweet, fruity flavor and vibrant heat. Made with real ingredients and no artificial colors or flavors, this jam delivers pure, natural goodness with a tropical kick. Ideal for toast, cheese boards, BBQ glazes, or adding a spicy twist to your favorite dishes.",
+    "images": [
+      "/images/Products/all_products/item_21.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
   }
+
+  
+
 
 ]

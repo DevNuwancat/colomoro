@@ -40,7 +40,7 @@ const goToSlide = (index: number) => {
 </script>
 
 <template>
-  <div class="lg:bg-blue-400 md:bg-yellow-400 sm:bg-red-400 bg-green-400 h-0.5 w-full"></div>
+  
 
   <backgroundImage class="absolute inset-0 -z-20 opacity-10">
     <img src="/src/assets/images/textures/test_gpt.png" alt="Background Textures" class="object-cover h-full w-full"/>

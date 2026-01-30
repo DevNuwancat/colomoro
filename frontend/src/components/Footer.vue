@@ -62,7 +62,9 @@
         <h1>Contact Us</h1>
 
         <div class="flex flex-col gap-2 mt-4 text-gray-600">
+          <!--
           <p class="text-base">Phone/WhatsApp: 766 188 920</p>
+          -->
           <p class="text-base">Email: colomoro@gmail.com</p>
         </div>
       </div>

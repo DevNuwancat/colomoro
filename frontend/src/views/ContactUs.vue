@@ -4,8 +4,7 @@ import Nav from '../components/Nav.vue'
 </script>
 
 <template>
-  <!-- ? Colored divider -->
-  <div class="lg:bg-blue-400 md:bg-yellow-400 sm:bg-red-400 bg-green-400 h-0.5 w-full"></div>
+ 
 
   <!-- ? Background image-->
   <div class="absolute inset-0 -z-20 opacity-10">
@@ -35,7 +34,7 @@ import Nav from '../components/Nav.vue'
             <h2 class="text-2xl font-primary font-bold text-gray-900 mb-6">Get In Touch</h2>
           </div>
 
-          <!-- WhatsApp -->
+          <!-- WhatsApp 
           <div class="flex items-start gap-4 group">
             <div class="bg-green-100 p-3 rounded-lg group-hover:bg-green-200 transition-colors">
               <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
@@ -49,6 +48,7 @@ import Nav from '../components/Nav.vue'
               </a>
             </div>
           </div>
+        -->
 
           <!-- Email -->
           <div class="flex items-start gap-4 group">
@@ -75,7 +75,7 @@ import Nav from '../components/Nav.vue'
             </div>
             <div>
               <h3 class="font-semibold text-gray-900 mb-1">Location</h3>
-              <p class="text-gray-600">Colombo, Sri Lanka</p>
+              <p class="text-gray-600">Ratnapura, Sri Lanka</p>
             </div>
           </div>
 
@@ -161,7 +161,7 @@ import Nav from '../components/Nav.vue'
       <div class="mt-6 bg-linear-to-r from-green-500 to-green-600 rounded-xl p-8 text-white text-center">
         <h3 class="text-2xl font-primary font-bold mb-3">Quick Response via WhatsApp</h3>
         <p class="mb-4 text-green-50">Get instant replies to your questions</p>
-        <a href="https://wa.me/94123456789">
+        <a href="https://wa.me/">
           <button class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-all duration-300 hover:scale-105 shadow-lg">
             Chat with Us Now
           </button>

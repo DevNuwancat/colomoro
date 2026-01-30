@@ -93,8 +93,9 @@ const goToBrandProducts = (brandSlug: string): void => {
 </script>
 
 <template >
-  <!-- ? Colored divider -->
+  <!-- 
   <div class=" lg:bg-blue-400 md:bg-yellow-400 sm:bg-red-400 bg-green-400 h-0.5 w-full"></div>
+  --->
 
   <!-- ? Background image-->
   <backgroundImage class="absolute inset-0 -z-20 opacity-10">
@@ -464,6 +465,7 @@ const goToBrandProducts = (brandSlug: string): void => {
   <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
 
     <!--* Heading -->
+    <router-link to="/product/12">
     <div class="md:col-span-1 col-span-2 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
      
@@ -492,8 +494,9 @@ const goToBrandProducts = (brandSlug: string): void => {
       </div>
 
   </div>
+  </router-link>
 
-
+    <router-link to="/product/16">
     <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
       <!--*-->
@@ -524,6 +527,9 @@ const goToBrandProducts = (brandSlug: string): void => {
 
     
     </div>
+    </router-link>
+
+    <router-link to="/product/20">
     <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
       <!--*-->
@@ -551,11 +557,12 @@ const goToBrandProducts = (brandSlug: string): void => {
       </div>
 
     </div>
+    </router-link>
 
    <!--?-->
 
     
-    
+     <router-link to="/product/2">
     <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
       <!--*-->
@@ -583,11 +590,12 @@ const goToBrandProducts = (brandSlug: string): void => {
       </div>
 
     </div>
+    </router-link>
 
     <!--?-->
 
     
-    
+    <router-link to="/product/11">
     <div class="col-span-1 relative sm:h-72 h-48 rounded-2xl overflow-hidden shadow-lg group cursor-pointer border border-white/50
     drop-shadow-2xl">
       <!--*-->
@@ -615,6 +623,7 @@ const goToBrandProducts = (brandSlug: string): void => {
       </div>
 
     </div>
+    </router-link>
   </div>
 
 
