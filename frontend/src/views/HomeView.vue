@@ -235,7 +235,7 @@ const goToBrandProducts = (brandSlug: string): void => {
       <!-- Overlay -->
       <div class="absolute bottom-0 left-0 w-full sm:bg-black/40 bg-black/40 text-white sm:p-3 p-2 text-shadow-lg">
         <p class="text-xs text-green-300 sm:block hidden text-shadow-2xs">Sashrika</p>
-        <h2 class="font-semibold sm:text-sm text-xs text-shadow-2xs">Handmade Coconut Oil 1l</h2>
+        <h2 class="font-semibold sm:text-sm text-xs text-shadow-2xs">Handmade Coconut Oil 1L</h2>
         <p class="text-sm text-shadow-2xs">Rs 2000.00</p>
       </div>
 
