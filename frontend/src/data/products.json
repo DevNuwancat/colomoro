@@ -214,5 +214,34 @@
     "badge": "",
     "stock": 10,
     "rating": 4.8
+  },
+  {
+    "id": 16,
+    "name": "Snake Bite Hot Sauce",
+    "price": 990.00,
+    "category": "Souce",
+    "brand": "Hotzy-Food",
+    "description": "Hotzy is a tropical pineapple-based hot sauce made with fiery Scotch bonnet peppers, delivering a perfectly balanced mild heat (Level 2) and bold flavor. Crafted with all-natural ingredients and free from MSG, artificial flavors, colors, and gluten, it’s a clean and wholesome choice. Perfect for pizza, rice dishes, BBQ, burgers, noodles, and more—Hotzy adds a fresh kick that elevates every bite.",
+    "images": [
+      "/images/Products/all_products/item_10.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
+  },
+  {
+    "id": 17,
+    "name": "Scorpion Sting Hot Sauce",
+    "price": 990.00,
+    "category": "Souce",
+    "brand": "Hotzy-Food",
+    "description": "A delicious blend of fresh, juicy mangoes and Scotch bonnet peppers, offering a gentle heat (Level 1) with rich tropical flavor. Made from an authentic, plant-based recipe with no MSG, artificial colors, or flavors—and completely gluten-free. Perfect for pizza, salads, dosa, roti, and everyday meals, this sauce adds a bright, flavorful twist without overpowering your taste buds.",
+    "images": [
+      "/images/Products/all_products/item_18.jpg"
+    ],
+    "badge": "",
+    "stock": 10,
+    "rating": 4.8
   }
+
 ]
