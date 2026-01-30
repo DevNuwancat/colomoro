@@ -160,7 +160,7 @@
     "rating": 4.8
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Butter Cake 1kg",
     "price": 1400.00,
     "category": "Cakes",
@@ -174,7 +174,7 @@
     "rating": 4.8
   },
    {
-    "id": 12,
+    "id": 13,
     "name": "Chocolate Cake 1kg",
     "price": 1700.00,
     "category": "Cakes",
@@ -188,7 +188,7 @@
     "rating": 4.8
   },
    {
-    "id": 13,
+    "id": 14,
     "name": "Date Cake 1kg",
     "price": 3000.00,
     "category": "Cakes",
@@ -202,7 +202,7 @@
     "rating": 4.8
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Chocolate Muffin",
     "price": 120.00,
     "category": "Cakes",
